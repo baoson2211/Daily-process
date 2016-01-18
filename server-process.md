@@ -4,10 +4,12 @@
 1. LXDE installation 
 
   * Run Instruction:
-		```$ sudo apt-get install lxde-core```
+		
+    ```$ sudo apt-get install lxde-core```
 	
   * Packages had been installed:
-	acl at-spi2-core colord consolekit dbus-x11 dconf-gsettings-backend \
+	
+  acl at-spi2-core colord consolekit dbus-x11 dconf-gsettings-backend \
   dconf-service desktop-file-utils dictionaries-common fontconfig \
   fontconfig-config fonts-dejavu-core gconf-service gconf-service-backend \
   gconf2 gconf2-common gcr gdisk gksu glib-networking glib-networking-common \
@@ -57,20 +59,25 @@
   usbmuxd x11-common x11-utils xbitmaps xscreensaver xscreensaver-data xterm \
 
   * Issue: 
+
 	locale: Cannot set LC_ALL to default locale: No such file or directory
 
   * Solution:
+
   Add variable LC_ALL='en_US.utf8' in /etc/environment
 
   * State:
+
 	Purged and be instead by ubuntu-desktop
 
 2. xinit installation
 
   *	Run Instruction:
-		$ sudo apt-get install xinit
+
+		```$ sudo apt-get install xinit```
 
   *	Packages had been installed:
+
 	libegl1-mesa libegl1-mesa-drivers libgbm1 libglamor0 libmtdev1
   libopenvg1-mesa libwayland-egl1-mesa libwayland-server0 libxatracker2
   libxcb-xfixes0 libxfont1 libxkbfile1 libxvmc1 x11-xkb-utils xfonts-base
@@ -96,14 +103,17 @@
   * Modify:
 
   * State:
+
   Purged
 
 3. Ubuntu desktop intallation
 
   *	Run Instruction:
+
 		```$ sudo apt-get install ubuntu-desktop```
 
   *	Packages had been installed:
+
   account-plugin-aim account-plugin-facebook account-plugin-flickr \
   account-plugin-google account-plugin-jabber account-plugin-salut \ 
   account-plugin-twitter account-plugin-yahoo acl acpi-support \ 
@@ -411,18 +421,22 @@
   * Solution:
 
   * Modify:
+
   Remove brltty gnome-sudoku gnome-mines gnome-mines rhythmbox network-manager
   totem eog
 
   * State:
+
 	Purged
 
 4. Lubuntu desktop intallation
 
   *	Run Instruction:
+
 		```$ sudo apt-get install lubuntu-desktop```
 
   *	Packages had been installed:
+
 	abiword abiword-common abiword-plugin-grammar abiword-plugin-mathview acl \
   acpi-support alsa-base alsa-utils anacron apg app-install-data apport-gtk \
   aptdaemon aptdaemon-data apturl apturl-common aspell aspell-en at-spi2-core \
@@ -667,6 +681,7 @@
   * Modify:
 
   * State:
+
 	Purge except the several packages:
 	
 	dconf-gsettings-backend:i386 dconf-service libdconf1:i386 libdrm-intel1:i386 \
@@ -685,9 +700,11 @@
 
 5. Webmin Installation
   * Run Instruction:
+
   Reference [Webmin Installing on Debian](http://www.webmin.com/deb.html)
 
   * Packages had been installed:
+
   apt-show-versions libauthen-pam-perl webmin
 
   * Issue:
@@ -697,7 +714,10 @@
   * Modify:
 
   * State:
+
 	Complete!!! :+1:
+	
 	You can now loging to [Remote link control](https://url:10000/) as root with
 	your root password, or as any user who can use ```sudo``` to commands as root
+
 
