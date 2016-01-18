@@ -104,7 +104,7 @@
 
   * State:
 
-Purged
+	Purged
 
 3. Ubuntu desktop intallation
 
@@ -422,8 +422,8 @@ Purged
 
   * Modify:
 
-  Remove brltty gnome-sudoku gnome-mines gnome-mines rhythmbox network-manager
-  totem eog
+	Remove brltty gnome-sudoku gnome-mines gnome-mines rhythmbox network-manager
+	totem eog
 
   * State:
 
@@ -687,13 +687,13 @@ Purged
 	dconf-gsettings-backend:i386 dconf-service libdconf1:i386 libdrm-intel1:i386 \
 	libdrm-nouveau2:i386 libdrm-radeon1:i386 libegl1-mesa:i386 libfontconfig1:i386 \
 	libgbm1:i386 libgdk-pixbuf2.0-0:i386 libgdk-pixbuf2.0-common \
-  libgl1-mesa-dri:i386 libglamor0:i386 libglapi-mesa:i386 libgtk-3-0:i386 \
-  libgtk-3-common libice6:i386 libjasper1:i386 libjpeg8:i386 libllvm3.4:i386 \
+	libgl1-mesa-dri:i386 libglamor0:i386 libglapi-mesa:i386 libgtk-3-0:i386 \
+	libgtk-3-common libice6:i386 libjasper1:i386 libjpeg8:i386 libllvm3.4:i386 \
 	libnotify4:i386 libpango-1.0-0:i386	libpangocairo-1.0-0:i386 \
-  libpangoft2-1.0-0:i386 libpciaccess0:i386 libpixman-1-0:i386 libthai0:i386 \
-  libtiff5:i386 libutempter0 libwayland-client0:i386	libwayland-cursor0:i386 \
-  libwebkitgtk-3.0-0:i386	libwebkitgtk-3.0-common libwebp5:i386	libx11-xcb1:i386 \
-  libxatracker2:i386 libxaw7:i386 libxcb-dri2-0:i386 libxcb-util0:i386 \
+	libpangoft2-1.0-0:i386 libpciaccess0:i386 libpixman-1-0:i386 libthai0:i386 \
+	libtiff5:i386 libutempter0 libwayland-client0:i386	libwayland-cursor0:i386 \
+	libwebkitgtk-3.0-0:i386	libwebkitgtk-3.0-common libwebp5:i386	libx11-xcb1:i386 \
+	libxatracker2:i386 libxaw7:i386 libxcb-dri2-0:i386 libxcb-util0:i386 \
 	libxcomposite1:i386	libxcursor1:i386 libxdamage1:i386 libxfixes3:i386 \
 	libxft2:i386 libxi6:i386 libxinerama1:i386	libxkbcommon0:i386 \
 	libxmu6:i386 libxpm4:i386	libxrandr2:i386	libxrender1:i386
@@ -701,11 +701,11 @@ Purged
 5. Webmin Installation
   * Run Instruction:
 
-  Reference [Webmin Installing on Debian](http://www.webmin.com/deb.html)
+	Reference [Webmin Installing on Debian](http://www.webmin.com/deb.html)
 
   * Packages had been installed:
 
-  apt-show-versions libauthen-pam-perl webmin
+	apt-show-versions libauthen-pam-perl webmin
 
   * Issue:
 
