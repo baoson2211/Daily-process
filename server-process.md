@@ -709,7 +709,11 @@
 
   * Issue:
 
+	The Web Server is running in SSL mode. Try the URL https://SERVER IP ADDRESS:10000/ instead.
+
   * Solution:
+
+	Reference to:	[Webmin SSL Solution Link](http://eitwebguru.com/webmin-error-the-web-server-is-running-in-ssl-mode/)
 
   * Modify:
 
