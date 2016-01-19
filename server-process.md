@@ -3,12 +3,10 @@
 ## 2016-01-18
 1. LXDE installation 
 
-  * Run Instruction:
-		
+  * Run Instruction:<br />
 		```$ sudo apt-get install lxde-core```
 	
-  * Packages had been installed:
-	
+  * Packages had been installed:<br />	
 	acl at-spi2-core colord consolekit dbus-x11 dconf-gsettings-backend \
 	dconf-service desktop-file-utils dictionaries-common fontconfig \
 	fontconfig-config fonts-dejavu-core gconf-service gconf-service-backend \
@@ -58,25 +56,21 @@
 	p11-kit p11-kit-modules pcmanfm python-talloc python-xdg samba-libs udisks2 \
 	usbmuxd x11-common x11-utils xbitmaps xscreensaver xscreensaver-data xterm \
 
-  * Issue: 
-
+  * Issue:<br />
 	locale: Cannot set LC_ALL to default locale: No such file or directory
 
-  * Solution:
-
+  * Solution:<br />
 	Add variable LC_ALL='en_US.utf8' in /etc/environment
 
-  * State:
-
+  * State:<br />
 	Purged and be instead by ubuntu-desktop
 
 2. xinit installation
 
-  *	Run Instruction:
-
+  *	Run Instruction:<br />
 		```$ sudo apt-get install xinit```
 
-  *	Packages had been installed:
+  *	Packages had been installed:<br />
 
 	libegl1-mesa libegl1-mesa-drivers libgbm1 libglamor0 libmtdev1
 	libopenvg1-mesa libwayland-egl1-mesa libwayland-server0 libxatracker2
@@ -96,24 +90,21 @@
 	xserver-xorg-video-sisusb xserver-xorg-video-tdfx xserver-xorg-video-trident
 	xserver-xorg-video-vesa xserver-xorg-video-vmware
 
-  * Issue:
+  * Issue:<br />
 
-  * Solution:
+  * Solution:<br />
 
-  * Modify:
+  * Modify:<br />
 
-  * State:
-
+  * State:<br />
 	Purged
 
 3. Ubuntu desktop intallation
 
-  *	Run Instruction:
-
+  *	Run Instruction:<br />
 		```$ sudo apt-get install ubuntu-desktop```
 
-  *	Packages had been installed:
-
+  *	Packages had been installed:<br />
 	account-plugin-aim account-plugin-facebook account-plugin-flickr \
 	account-plugin-google account-plugin-jabber account-plugin-salut \ 
 	account-plugin-twitter account-plugin-yahoo acl acpi-support \ 
@@ -416,27 +407,23 @@
 	xul-ext-unity xul-ext-webaccounts xul-ext-websites-integration xvt yelp \
 	yelp-xsl zeitgeist zeitgeist-core zeitgeist-datahub zenity zenity-common zip \
 
-  * Issue:
+  * Issue:<br />
 
-  * Solution:
+  * Solution:<br />
 
-  * Modify:
-
+  * Modify:<br />
 	Remove brltty gnome-sudoku gnome-mines gnome-mines rhythmbox network-manager
 	totem eog
 
-  * State:
-
+  * State:<br />
 	Purged
 
 4. Lubuntu desktop intallation
 
-  *	Run Instruction:
-
+  *	Run Instruction:<br />
 		```$ sudo apt-get install lubuntu-desktop```
 
-  *	Packages had been installed:
-
+  *	Packages had been installed:<br />
 	abiword abiword-common abiword-plugin-grammar abiword-plugin-mathview acl \
 	acpi-support alsa-base alsa-utils anacron apg app-install-data apport-gtk \
 	aptdaemon aptdaemon-data apturl apturl-common aspell aspell-en at-spi2-core \
@@ -674,16 +661,15 @@
 	xserver-xorg-video-vesa xserver-xorg-video-vmware xterm xul-ext-ubufox xvt \
 	yelp yelp-xsl zenity zenity-common zip
 
-  * Issue:
+  * Issue:<br />
 
-  * Solution:
+  * Solution:<br />
 
-  * Modify:
+  * Modify:<br />
 
-  * State:
+  * State:<br />
 
-	Purge except the several packages:
-	
+	Purge except the several packages:<br />
 	dconf-gsettings-backend:i386 dconf-service libdconf1:i386 libdrm-intel1:i386 \
 	libdrm-nouveau2:i386 libdrm-radeon1:i386 libegl1-mesa:i386 libfontconfig1:i386 \
 	libgbm1:i386 libgdk-pixbuf2.0-0:i386 libgdk-pixbuf2.0-common \
@@ -699,26 +685,21 @@
 	libxmu6:i386 libxpm4:i386	libxrandr2:i386	libxrender1:i386
 
 5. Webmin Installation
-  * Run Instruction:
-
+  * Run Instruction:<br />
 	Reference [Webmin Installing on Debian](http://www.webmin.com/deb.html)
 
-  * Packages had been installed:
-
+  * Packages had been installed:<br />
 	apt-show-versions libauthen-pam-perl webmin
 
-  * Issue:
-
+  * Issue:<br />
 	The Web Server is running in SSL mode. Try the URL https://SERVER IP ADDRESS:10000/ instead.
 
-  * Solution:
-
+  * Solution:<br />
 	Reference to:	[Webmin SSL Solution Link](http://eitwebguru.com/webmin-error-the-web-server-is-running-in-ssl-mode/)
 
-  * Modify:
+  * Modify:<br />
 
-  * State:
-
+  * State:<br />
 	Complete!!! :+1:
 	
 	You can now loging to [Remote link control](https://url:10000/) as root with
@@ -727,68 +708,60 @@
 ## 2016-01-19
 1. Gitweb Installation:
 
-  * Run Instruction:
-		
+  * Run Instruction:<br />		
 		```$ sudo apt-get install gitweb```
 
-  * Packages had been installed:
-	
+  * Packages had been installed:<br />	
 	gitweb
 	
-  * Issue:
+  * Issue:<br />
 	
-  * Solution:
+  * Solution:<br />
 	
-  * Modify:
+  * Modify:<br />
 
-  * State:
-	
+  * State:<br />	
 	Complete!!!
 	
 2. Lighttpd Installation:
 
-  * Run Instruction:
+  * Run Instruction:<br />
 		
 		```$ sudo apt-get install lighttpd```
 
-  * Packages had been installed:
-	
+  * Packages had been installed:<br />
 	gamin libgamin0 libterm-readline-perl-perl lighttpd spawn-fcgi
 	
-  * Issue:
-	
+  * Issue:<br />	
 	2016-01-19 11:16:59: (network.c.405) can't bind to port:  80 Address already in use same port Apache2.
 		
-  * Solution:
+  * Solution:<br />
 	
-  * Modify:
+  * Modify:<br />
 
-  * State:
-	
+  * State:<br />	
 	Complete!!!
 
 3. Uninstall lightdm
 	
-  * Run Instruction:
-		
+  * Run Instruction:<br />		
 		```$ sudo apt-get purge lightdm```
 
   * Packages had been installed: <br />
 	lightdm* lubuntu-core* lubuntu-default-session* lubuntu-default-settings*
 	
-  * Issue:
+  * Issue:<br />
 		
-  * Solution:
+  * Solution:<br />
 	
-  * Modify:
+  * Modify:<br />
 
-  * State:
-	
+  * State:<br />	
 	Complete!!!
 
 4. Gitolite3 Installation
 
-  * Run Instruction:
+  * Run Instruction: <br />
 		```$ sudo apt-get install gitolite3```
 	
   * Packages had been installed: <br />
@@ -809,11 +782,11 @@
   system-config-printer-gnome system-config-printer-udev ubuntu-system-service <br />
   unity-control-center unity-greeter unity-settings-daemon
 	
-  * Issue:
+  * Issue: <br />
 		
-  * Solution:
+  * Solution: <br />
 	
-  * Modify:
+  * Modify: <br />
 
   * State: <br />
 	No adminkey given - not setting up gitolite. Do a dpkg-reconfigure to setup.
