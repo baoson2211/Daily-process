@@ -6,7 +6,7 @@
   * Run Instruction:<br />
 		```$ sudo apt-get install lxde-core```
 	
-  * Packages had been installed:<br />	
+  * Packages had been installed:<br />
 	acl at-spi2-core colord consolekit dbus-x11 dconf-gsettings-backend \
 	dconf-service desktop-file-utils dictionaries-common fontconfig \
 	fontconfig-config fonts-dejavu-core gconf-service gconf-service-backend \
@@ -71,7 +71,6 @@
 		```$ sudo apt-get install xinit```
 
   *	Packages had been installed:<br />
-
 	libegl1-mesa libegl1-mesa-drivers libgbm1 libglamor0 libmtdev1
 	libopenvg1-mesa libwayland-egl1-mesa libwayland-server0 libxatracker2
 	libxcb-xfixes0 libxfont1 libxkbfile1 libxvmc1 x11-xkb-utils xfonts-base
