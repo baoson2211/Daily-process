@@ -684,6 +684,7 @@
 	libxmu6:i386 libxpm4:i386	libxrandr2:i386	libxrender1:i386
 
 5. Webmin Installation
+	
   * Run Instruction:<br />
 	Reference [Webmin Installing on Debian](http://www.webmin.com/deb.html)
 
@@ -706,11 +707,11 @@
 
 ## 2016-01-19
 1. Gitweb Installation:
-
+	
   * Run Instruction:<br />		
 		```$ sudo apt-get install gitweb```
 
-  * Packages had been installed:<br />	
+  * Packages had been installed:<br />
 	gitweb
 	
   * Issue:<br />
@@ -723,7 +724,7 @@
 	Complete!!!
 	
 2. Lighttpd Installation:
-
+	
   * Run Instruction:<br />
 		
 		```$ sudo apt-get install lighttpd```
@@ -759,7 +760,7 @@
 	Complete!!!
 
 4. Gitolite3 Installation
-
+	
   * Run Instruction: <br />
 		```$ sudo apt-get install gitolite3```
 	
