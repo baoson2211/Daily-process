@@ -773,7 +773,7 @@
 		
 		```$ sudo apt-get purge lightdm```
 
-  * Packages had been installed: \	
+  * Packages had been installed: \n
 	lightdm* lubuntu-core* lubuntu-default-session* lubuntu-default-settings*
 	
   * Issue:
