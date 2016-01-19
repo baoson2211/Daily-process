@@ -724,4 +724,67 @@
 	You can now loging to [Remote link control](https://url:10000/) as root with
 	your root password, or as any user who can use ```sudo``` to commands as root
 
+## 2016-01-19
+1. Gitweb Installation:
+
+  * Run Instruction:
+		
+		```$ sudo apt-get install gitweb```
+
+  * Packages had been installed:
+	
+	gitweb
+	
+  * Issue:
+	
+  * Solution:
+	
+  * Modify:
+
+  * State:
+	
+	Complete!!!
+	
+2. Lighttpd Installation:
+
+  * Run Instruction:
+		
+		```$ sudo apt-get install lighttpd```
+
+  * Packages had been installed:
+	
+	gamin libgamin0 libterm-readline-perl-perl lighttpd spawn-fcgi
+	
+  * Issue:
+	
+	2016-01-19 11:16:59: (network.c.405) can't bind to port:  80 Address already in use
+	Same port 80 Apache2.
+		
+  * Solution:
+	
+  * Modify:
+
+  * State:
+	
+	Complete!!!
+
+3. Uninstall lightdm
+	
+* Run Instruction:
+		
+		```$ sudo apt-get purge lightdm```
+
+  * Packages had been installed:
+	
+	lightdm* lubuntu-core* lubuntu-default-session* lubuntu-default-settings*
+	
+  * Issue:
+		
+  * Solution:
+	
+  * Modify:
+
+  * State:
+	
+	Complete!!!
 
