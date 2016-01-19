@@ -757,8 +757,7 @@
 	
   * Issue:
 	
-	2016-01-19 11:16:59: (network.c.405) can't bind to port:  80 Address already in use
-	Same port 80 Apache2.
+	2016-01-19 11:16:59: (network.c.405) can't bind to port:  80 Address already in use same port Apache2.
 		
   * Solution:
 	
@@ -770,12 +769,11 @@
 
 3. Uninstall lightdm
 	
-* Run Instruction:
+  * Run Instruction:
 		
 		```$ sudo apt-get purge lightdm```
 
-  * Packages had been installed:
-	
+  * Packages had been installed: \	
 	lightdm* lubuntu-core* lubuntu-default-session* lubuntu-default-settings*
 	
   * Issue:
