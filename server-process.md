@@ -836,4 +836,77 @@
 
   * State:<br />
 	Complete!!! :+1:
+
+2. Remove unused packages
 	
+  * Run Instruction:<br />
+		```$ sudo apt-get autoremove --purge```
+	
+  * Packages had been remove:<br />
+
+  apg* bluez* cheese-common* gir1.2-gnomebluetooth-1.0* gir1.2-notify-0.7*
+  gkbd-capplet* gnome-bluetooth* gnome-desktop3-data* gnome-menus*
+  gnome-settings-daemon-schemas* gsettings-ubuntu-schemas*
+  gstreamer1.0-clutter* gtk2-engines-murrine* gtk2-engines-pixbuf*
+  gtk3-engines-unico* indicator-bluetooth* indicator-datetime*
+  indicator-keyboard* indicator-power* indicator-sound* libcheese-gtk23*
+  libcheese7* libclutter-gst-2.0-0* libcrack2* libecal-1.2-16* libelfg0*
+  libgee2* libglib2.0-bin* libgnome-bluetooth11* libgnome-desktop-3-7*
+  libgnome-keyring-common* libgnome-keyring0* libgnome-menu-3-0*
+  libgnomekbd-common* libgnomekbd8* libgtop2-7* libgtop2-common*
+  libnm-gtk-common* libnm-gtk0* libopenobex1* libpulse-mainloop-glib0*
+  libpwquality-common* libpwquality1* libtimezonemap1*
+  libunity-control-center1* liburl-dispatcher1* libwacom-common* libwacom2*
+  linux-headers-3.19.0-25* linux-headers-3.19.0-25-generic*
+  linux-image-3.19.0-25-generic* linux-image-extra-3.19.0-25-generic*
+  mousetweaks* nautilus-data* obex-data-server* obexd-client* plymouth-label*
+  policykit-desktop-privileges* python-cups* python-cupshelpers*
+  python-gnomekeyring* python-libxml2* python-pysqlite2* python-smbc*
+  session-migration* system-config-printer-common*
+  system-config-printer-gnome* system-config-printer-udev*
+  ubuntu-system-service* unity-control-center* unity-greeter*
+  unity-settings-daemon*
+
+  * Issue:<br />
+	
+  * Solution:<br />
+	
+  * Modify:<br />
+
+  * State:<br />
+	Complete!!! :+1:
+
+3. Disable auto startup gitweb when server booting and auto startup when login
+	
+  * Run Instruction:<br />
+	copy /etc/init.d/instaweb into /home/git/:<br />
+		```$ sudo cp /etc/init.d/instaweb /home/git/instaweb.sh```
+	change file owner and group:<br />
+		```sudo chown git:ase instaweb.sh```
+	remove instaweb into /etc/init.d/:<br />
+		```$ sudo update-rc.d instaweb remove```
+	adding the following lines into .profile of each:<br />
+		```
+		# statup git instaweb
+		if [ -f "$HOME/instaweb.sh" ]; then
+				$HOME/instaweb.sh
+		fi
+		```
+	finally, approve the change:
+		```$ source ~/.profile```
+
+  * Packages had been remove:<br />
+
+  * Issue:<br />
+	w3m (or lynx) auto startup
+	
+  * Solution:<br />
+	You can get ```w3m``` (or ```lynx```) out by press ```q``` then press ```y``` on your keyboard<br />
+	Another, you can remove ```w3m``` (or ```lynx```) too (not recommend):<br />
+		```$ sudo apt-get remove w3m lynx```
+	
+  * Modify:<br />
+
+  * State:<br />
+	Complete!!! :+1:
+
