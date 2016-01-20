@@ -880,11 +880,11 @@
 	
   * Run Instruction:<br />
 	copy /etc/init.d/instaweb into /home/git/:<br />
-	```$ sudo cp /etc/init.d/instaweb /home/git/instaweb.sh```<br />
+	```$ sudo cp /etc/init.d/instaweb /home/git/instaweb.sh```
 	change file owner and group:<br />
-	```sudo chown git:ase instaweb.sh```<br />
+	```sudo chown git:ase instaweb.sh```
 	remove instaweb into /etc/init.d/:<br />
-	```$ sudo update-rc.d instaweb remove```<br />
+	```$ sudo update-rc.d instaweb remove```
 	adding the following lines into .profile of each:<br />
 	```
 	# statup git instaweb
@@ -893,7 +893,7 @@
 	fi
 	```
 	finally, approve the change:<br />
-		```$ source ~/.profile```
+	```$ source ~/.profile```
 
   * Packages had been changed:<br />
 
