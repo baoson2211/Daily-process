@@ -791,3 +791,50 @@
   * State: <br />
 	No adminkey given - not setting up gitolite. Do a dpkg-reconfigure to setup.
 
+## 2016-01-20
+1. Auto startup gitweb when server booting:
+	
+  * Run Instruction:<br />
+	Create a file named instaweb with the following content:<br />
+	```
+	### BEGIN INIT INFO
+	# Provides:          git
+	# Required-Start:    $local_fs $remote_fs $network $syslog
+	# Required-Stop:     $local_fs $remote_fs $network $syslog
+	# Should-Start:      fam
+	# Should-Stop:       fam
+	# Default-Start:     2 3 4 5
+	# Default-Stop:      0 1 6
+	# Short-Description: Start the lighttpd git server.
+	# Description:       Fast and smalle webserver with minimal memory footprint
+	#                    developed with security in mind HTTP/1.1 compliant caching
+	#                    proxy server.
+	### END INIT INFO
+
+
+	PATH=/sbin:/bin:/usr/sbin:/usr/bin
+	DAEMON=/usr/bin/git
+	NAME=instaweb
+	DESC="git server"
+	PIDFILE=/var/run/$NAME.pid
+	SCRIPTNAME=/etc/init.d/$NAME
+
+	DAEMON_OPTS="instaweb --port=1234"
+
+	sudo -H -u git bash -c "cd /home/git/repositories/gitolite-admin.git && $DAEMON $DAEMON_OPTS"
+
+	exit 0
+	```<br />
+	Then move this file into ```/etc/init.d/```
+
+  * Packages had been installed:<br />
+	
+  * Issue:<br />
+	
+  * Solution:<br />
+	
+  * Modify:<br />
+
+  * State:<br />	
+	Complete!!!
+	
