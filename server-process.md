@@ -886,7 +886,8 @@
 	remove instaweb into /etc/init.d/:<br />
 	```$ sudo update-rc.d instaweb remove```
 	adding the following lines into .profile of each:<br />
-	```# statup git instaweb
+	```
+	# statup git instaweb
 	if [ -f "$HOME/instaweb.sh" ]; then
 		$HOME/instaweb.sh```
 	fi
