@@ -824,7 +824,7 @@
 	sudo -H -u git bash -c "cd /home/git/repositories/gitolite-admin.git && $DAEMON $DAEMON_OPTS"
 
 	exit 0
-	```<br />
+	```
 	Then move this file into ```/etc/init.d/```
 
   * Packages had been installed:<br />
