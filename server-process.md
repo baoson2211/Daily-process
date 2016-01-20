@@ -880,28 +880,28 @@
 	
   * Run Instruction:<br />
 	copy /etc/init.d/instaweb into /home/git/:<br />
-		```$ sudo cp /etc/init.d/instaweb /home/git/instaweb.sh```
+		```$ sudo cp /etc/init.d/instaweb /home/git/instaweb.sh```<br />
 	change file owner and group:<br />
 		```sudo chown git:ase instaweb.sh```
 	remove instaweb into /etc/init.d/:<br />
-		```$ sudo update-rc.d instaweb remove```
+		```$ sudo update-rc.d instaweb remove```<br />
 	adding the following lines into .profile of each:<br />
 		```
-		# statup git instaweb
-		if [ -f "$HOME/instaweb.sh" ]; then
-				$HOME/instaweb.sh
-		fi
+		# statup git instaweb<br />
+		if [ -f "$HOME/instaweb.sh" ]; then<br />
+				$HOME/instaweb.sh<br />
+		fi<br />
 		```
 	finally, approve the change:
 		```$ source ~/.profile```
 
-  * Packages had been remove:<br />
+  * Packages had been changed:<br />
 
   * Issue:<br />
 	w3m (or lynx) auto startup
 	
   * Solution:<br />
-	You can get ```w3m``` (or ```lynx```) out by press ```q``` then press ```y``` on your keyboard<br />
+	You can get ```w3m``` (or ```lynx```) out by press ```q``` then press ```y``` on your keyboard.<br />
 	Another, you can remove ```w3m``` (or ```lynx```) too (not recommend):<br />
 		```$ sudo apt-get remove w3m lynx```
 	
