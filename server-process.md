@@ -731,14 +731,14 @@
   * Packages had been installed:<br />
 	gamin libgamin0 libterm-readline-perl-perl lighttpd spawn-fcgi
 	
-  * Issue:<br />	
+  * Issue:<br />
 	2016-01-19 11:16:59: (network.c.405) can't bind to port:  80 Address already in use same port Apache2.
 		
   * Solution:<br />
 	
   * Modify:<br />
 
-  * State:<br />	
+  * State:<br />
 	Complete!!!
 
 3. Uninstall lightdm
@@ -746,7 +746,7 @@
   * Run Instruction:<br />
 		```$ sudo apt-get purge lightdm```
 
-  * Packages had been installed: <br />
+  * Packages had been installed:<br />
 	lightdm* lubuntu-core* lubuntu-default-session* lubuntu-default-settings*
 	
   * Issue:<br />
@@ -763,22 +763,22 @@
   * Run Instruction:<br />
 		```$ sudo apt-get install gitolite3```
 	
-  * Packages had been installed: <br />
-	apg bluez cheese-common gir1.2-gnomebluetooth-1.0 gkbd-capplet <br />
-  gnome-bluetooth gnome-desktop3-data gnome-menus <br />
-  gnome-settings-daemon-schemas gsettings-ubuntu-schemas gstreamer1.0-clutter <br />
-  indicator-bluetooth indicator-datetime indicator-keyboard indicator-power <br />
-  indicator-sound libcheese-gtk23 libcheese7 libclutter-gst-2.0-0 libcrack2 <br />
-  libecal-1.2-16 libelfg0 libgee2 libglib2.0-bin libgnome-bluetooth11 <br />
-  libgnome-desktop-3-7 libgnome-keyring-common libgnome-keyring0 <br />
-  libgnome-menu-3-0 libgnomekbd-common libgnomekbd8 libgtop2-7 libgtop2-common <br />
-  libnm-gtk-common libnm-gtk0 libopenobex1 libpulse-mainloop-glib0 <br />
-  libpwquality-common libpwquality1 libtimezonemap1 libunity-control-center1 <br />
-  liburl-dispatcher1 libwacom-common libwacom2 lubuntu-icon-theme mousetweaks <br />
-  nautilus-data obex-data-server obexd-client policykit-desktop-privileges <br />
-  python-cups python-cupshelpers python-gnomekeyring python-libxml2 <br />
-  python-smbc session-migration system-config-printer-common <br />
-  system-config-printer-gnome system-config-printer-udev ubuntu-system-service <br />
+  * Packages had been installed:<br />
+	apg bluez cheese-common gir1.2-gnomebluetooth-1.0 gkbd-capplet
+  gnome-bluetooth gnome-desktop3-data gnome-menus
+  gnome-settings-daemon-schemas gsettings-ubuntu-schemas gstreamer1.0-clutter
+  indicator-bluetooth indicator-datetime indicator-keyboard indicator-power
+  indicator-sound libcheese-gtk23 libcheese7 libclutter-gst-2.0-0 libcrack2
+  libecal-1.2-16 libelfg0 libgee2 libglib2.0-bin libgnome-bluetooth11
+  libgnome-desktop-3-7 libgnome-keyring-common libgnome-keyring0
+  libgnome-menu-3-0 libgnomekbd-common libgnomekbd8 libgtop2-7 libgtop2-common
+  libnm-gtk-common libnm-gtk0 libopenobex1 libpulse-mainloop-glib0
+  libpwquality-common libpwquality1 libtimezonemap1 libunity-control-center1
+  liburl-dispatcher1 libwacom-common libwacom2 lubuntu-icon-theme mousetweaks
+  nautilus-data obex-data-server obexd-client policykit-desktop-privileges
+  python-cups python-cupshelpers python-gnomekeyring python-libxml2
+  python-smbc session-migration system-config-printer-common
+  system-config-printer-gnome system-config-printer-udev ubuntu-system-service
   unity-control-center unity-greeter unity-settings-daemon
 	
   * Issue:<br />
