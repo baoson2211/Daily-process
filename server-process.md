@@ -901,7 +901,10 @@
 	w3m (or lynx) automatic startup
 	
   * Solution:<br />
-	You can get ```w3m``` (or ```lynx```) out by press ```q``` then press ```y``` on your keyboard.<br />
+  Open and edit /usr/lib/git-core/git-instaweb:<br />
+	```sudo nano /usr/lib/git-core/git-instaweb```<br />
+	You comment 5 last lines and save this file.<br />
+	So, if You did not wanna edit that file above, You'd get ```w3m``` (or ```lynx```) out by press ```q``` then press ```y``` on your keyboard.<br />
 	Another, you can remove ```w3m``` (or ```lynx```) too (not recommend):<br />
 		```$ sudo apt-get remove w3m lynx```
 	
