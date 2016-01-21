@@ -1146,7 +1146,7 @@
   * Modify:<br />
 	
   * TO-DO:<br />
-	Create and config ftp virtual users
+	Create and config ftp virtual users.
 	
   * State:<br />
 	Complete!!! :+1:
