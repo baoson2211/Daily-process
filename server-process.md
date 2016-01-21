@@ -910,3 +910,54 @@
   * State:<br />
 	Complete!!! :+1:
 
+## 2016-01-21
+1. Vsftpd Installation:
+	
+  * Run Instruction:<br />
+	```$ sudo apt-get install vsftpd```
+	
+  * Packages had been changed:<br />
+	vsftpd
+	
+  * Issue:<br />
+		
+  * Solution:<br />
+	
+  * Modify:<br />
+	
+  * State:<br />
+	Complete!!! :+1:
+	
+2. Create an user account not sudoer
+	
+  * Run Instruction:<br />
+	Create an user account not sudoer named vsftpd: <br />
+	```sudo useradd --shell /bin/bash -u 1002 -b /var/www -m vsftpd```<br />
+	Change the name of $HOME user directory:<br />
+	```sudo mv /var/www/vsftpd /var/www/ftp```<br />
+	Set passwd for new account:<br />
+	```sudo passwd vsftpd```<br />
+	Type and retype password which you want. Password is NOT appear.<br />
+	
+	Create a new group named vsftpd:<br />
+	```sudo addgroup --gid 1002 vsftpd```<br />
+	Modify /etc/passwd as root:<br />
+	```sudo nano /etc/passwd```<br />	
+	Switch to the line beginning with ```vsftpd``` and changed as follows:<br />
+	```vsftpd:x:1002:1002:vsftpd,,,:/var/www/ftp:/bin/bash```<br />
+	Then save and quit nano.
+	
+	Make symbolic link between one of directories in /var/www/ftp and /svr/ftp:<br />
+	```sudo ln -s /var/www/ftp/name_of_directory /svr/ftp```
+	
+  * Packages had been changed:<br />
+	
+  * Issue:<br />
+		
+  * Solution:<br />
+	
+  * Modify:<br />
+	
+  * State:<br />
+	Complete!!! :+1:
+	
