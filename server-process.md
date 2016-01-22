@@ -7,6 +7,7 @@
 		```$ sudo apt-get install lxde-core```
 	
   * Packages had been installed:<br />
+	```
 	acl at-spi2-core colord consolekit dbus-x11 dconf-gsettings-backend
 	dconf-service desktop-file-utils dictionaries-common fontconfig
 	fontconfig-config fonts-dejavu-core gconf-service gconf-service-backend
@@ -55,7 +56,7 @@
 	lxpanel lxsession lxsession-data lxsession-logout miscfiles obconf openbox
 	p11-kit p11-kit-modules pcmanfm python-talloc python-xdg samba-libs udisks2
 	usbmuxd x11-common x11-utils xbitmaps xscreensaver xscreensaver-data xterm
-
+	```
   * Issue:<br />
 	locale: Cannot set LC_ALL to default locale: No such file or directory
 
@@ -71,6 +72,7 @@
 		```$ sudo apt-get install xinit```
 
   *	Packages had been installed:<br />
+	```
 	libegl1-mesa libegl1-mesa-drivers libgbm1 libglamor0 libmtdev1
 	libopenvg1-mesa libwayland-egl1-mesa libwayland-server0 libxatracker2
 	libxcb-xfixes0 libxfont1 libxkbfile1 libxvmc1 x11-xkb-utils xfonts-base
@@ -88,7 +90,7 @@
 	xserver-xorg-video-siliconmotion xserver-xorg-video-sis
 	xserver-xorg-video-sisusb xserver-xorg-video-tdfx xserver-xorg-video-trident
 	xserver-xorg-video-vesa xserver-xorg-video-vmware
-
+	```
   * Issue:<br />
 
   * Solution:<br />
@@ -104,6 +106,7 @@
 		```$ sudo apt-get install ubuntu-desktop```
 
   *	Packages had been installed:<br />
+	```
 	account-plugin-aim account-plugin-facebook account-plugin-flickr
 	account-plugin-google account-plugin-jabber account-plugin-salut 
 	account-plugin-twitter account-plugin-yahoo acl acpi-support 
@@ -405,7 +408,7 @@
 	xserver-xorg-video-vesa xserver-xorg-video-vmware xterm xul-ext-ubufox
 	xul-ext-unity xul-ext-webaccounts xul-ext-websites-integration xvt yelp
 	yelp-xsl zeitgeist zeitgeist-core zeitgeist-datahub zenity zenity-common zip
-
+	```
   * Issue:<br />
 
   * Solution:<br />
@@ -423,6 +426,7 @@
 		```$ sudo apt-get install lubuntu-desktop```
 
   *	Packages had been installed:<br />
+	```
 	abiword abiword-common abiword-plugin-grammar abiword-plugin-mathview acl
 	acpi-support alsa-base alsa-utils anacron apg app-install-data apport-gtk
 	aptdaemon aptdaemon-data apturl apturl-common aspell aspell-en at-spi2-core
@@ -659,7 +663,7 @@
 	xserver-xorg-video-sisusb xserver-xorg-video-tdfx xserver-xorg-video-trident
 	xserver-xorg-video-vesa xserver-xorg-video-vmware xterm xul-ext-ubufox xvt
 	yelp yelp-xsl zenity zenity-common zip
-
+	```
   * Issue:<br />
 
   * Solution:<br />
@@ -669,6 +673,7 @@
   * State:<br />
 
 	Purge except the several packages:<br />
+	```
 	dconf-gsettings-backend:i386 dconf-service libdconf1:i386 libdrm-intel1:i386
 	libdrm-nouveau2:i386 libdrm-radeon1:i386 libegl1-mesa:i386 libfontconfig1:i386
 	libgbm1:i386 libgdk-pixbuf2.0-0:i386 libgdk-pixbuf2.0-common
@@ -682,6 +687,7 @@
 	libxcomposite1:i386	libxcursor1:i386 libxdamage1:i386 libxfixes3:i386
 	libxft2:i386 libxi6:i386 libxinerama1:i386	libxkbcommon0:i386
 	libxmu6:i386 libxpm4:i386	libxrandr2:i386	libxrender1:i386
+	```
 
 5. Webmin Installation
 	
@@ -689,7 +695,7 @@
 	Reference [Webmin Installing on Debian](http://www.webmin.com/deb.html)
 
   * Packages had been installed:<br />
-	apt-show-versions libauthen-pam-perl webmin
+	```apt-show-versions libauthen-pam-perl webmin```
 
   * Issue:<br />
 	The Web Server is running in SSL mode. Try the URL https://SERVER IP ADDRESS:10000/ instead.
@@ -726,10 +732,10 @@
 2. Lighttpd Installation:
 	
   * Run Instruction:<br />
-		```$ sudo apt-get install lighttpd```
+	```$ sudo apt-get install lighttpd```
 
   * Packages had been installed:<br />
-	gamin libgamin0 libterm-readline-perl-perl lighttpd spawn-fcgi
+	```gamin libgamin0 libterm-readline-perl-perl lighttpd spawn-fcgi```
 	
   * Issue:<br />
 	2016-01-19 11:16:59: (network.c.405) can't bind to port:  80 Address already in use same port Apache2.
@@ -747,7 +753,7 @@
 		```$ sudo apt-get purge lightdm```
 
   * Packages had been installed:<br />
-	lightdm* lubuntu-core* lubuntu-default-session* lubuntu-default-settings*
+	```lightdm* lubuntu-core* lubuntu-default-session* lubuntu-default-settings*```
 	
   * Issue:<br />
 		
@@ -764,6 +770,7 @@
 		```$ sudo apt-get install gitolite3```
 	
   * Packages had been installed:<br />
+	```
 	apg bluez cheese-common gir1.2-gnomebluetooth-1.0 gkbd-capplet
   gnome-bluetooth gnome-desktop3-data gnome-menus
   gnome-settings-daemon-schemas gsettings-ubuntu-schemas gstreamer1.0-clutter
@@ -780,7 +787,7 @@
   python-smbc session-migration system-config-printer-common
   system-config-printer-gnome system-config-printer-udev ubuntu-system-service
   unity-control-center unity-greeter unity-settings-daemon
-	
+	```
   * Issue:<br />
 		
   * Solution:<br />
@@ -794,7 +801,7 @@
 1. Auto startup gitweb when server booting:
 	
   * Run Instruction:<br />
-	Create a file named instaweb with the following content:<br />
+	Create a file named ```instaweb``` with the following content:<br />
 	```
 	### BEGIN INIT INFO
 	# Provides:          git
@@ -843,30 +850,30 @@
 		```$ sudo apt-get autoremove --purge```
 	
   * Packages had been remove:<br />
-
-  apg* bluez* cheese-common* gir1.2-gnomebluetooth-1.0* gir1.2-notify-0.7*
-  gkbd-capplet* gnome-bluetooth* gnome-desktop3-data* gnome-menus*
-  gnome-settings-daemon-schemas* gsettings-ubuntu-schemas*
-  gstreamer1.0-clutter* gtk2-engines-murrine* gtk2-engines-pixbuf*
-  gtk3-engines-unico* indicator-bluetooth* indicator-datetime*
-  indicator-keyboard* indicator-power* indicator-sound* libcheese-gtk23*
-  libcheese7* libclutter-gst-2.0-0* libcrack2* libecal-1.2-16* libelfg0*
-  libgee2* libglib2.0-bin* libgnome-bluetooth11* libgnome-desktop-3-7*
-  libgnome-keyring-common* libgnome-keyring0* libgnome-menu-3-0*
-  libgnomekbd-common* libgnomekbd8* libgtop2-7* libgtop2-common*
-  libnm-gtk-common* libnm-gtk0* libopenobex1* libpulse-mainloop-glib0*
-  libpwquality-common* libpwquality1* libtimezonemap1*
-  libunity-control-center1* liburl-dispatcher1* libwacom-common* libwacom2*
-  linux-headers-3.19.0-25* linux-headers-3.19.0-25-generic*
-  linux-image-3.19.0-25-generic* linux-image-extra-3.19.0-25-generic*
-  mousetweaks* nautilus-data* obex-data-server* obexd-client* plymouth-label*
-  policykit-desktop-privileges* python-cups* python-cupshelpers*
-  python-gnomekeyring* python-libxml2* python-pysqlite2* python-smbc*
-  session-migration* system-config-printer-common*
-  system-config-printer-gnome* system-config-printer-udev*
-  ubuntu-system-service* unity-control-center* unity-greeter*
-  unity-settings-daemon*
-
+	```
+	apg* bluez* cheese-common* gir1.2-gnomebluetooth-1.0* gir1.2-notify-0.7*
+	gkbd-capplet* gnome-bluetooth* gnome-desktop3-data* gnome-menus*
+	gnome-settings-daemon-schemas* gsettings-ubuntu-schemas*
+	gstreamer1.0-clutter* gtk2-engines-murrine* gtk2-engines-pixbuf*
+	gtk3-engines-unico* indicator-bluetooth* indicator-datetime*
+	indicator-keyboard* indicator-power* indicator-sound* libcheese-gtk23*
+	libcheese7* libclutter-gst-2.0-0* libcrack2* libecal-1.2-16* libelfg0*
+	libgee2* libglib2.0-bin* libgnome-bluetooth11* libgnome-desktop-3-7*
+	libgnome-keyring-common* libgnome-keyring0* libgnome-menu-3-0*
+	libgnomekbd-common* libgnomekbd8* libgtop2-7* libgtop2-common*
+	libnm-gtk-common* libnm-gtk0* libopenobex1* libpulse-mainloop-glib0*
+	libpwquality-common* libpwquality1* libtimezonemap1*
+	libunity-control-center1* liburl-dispatcher1* libwacom-common* libwacom2*
+	linux-headers-3.19.0-25* linux-headers-3.19.0-25-generic*
+	linux-image-3.19.0-25-generic* linux-image-extra-3.19.0-25-generic*
+	mousetweaks* nautilus-data* obex-data-server* obexd-client* plymouth-label*
+	policykit-desktop-privileges* python-cups* python-cupshelpers*
+	python-gnomekeyring* python-libxml2* python-pysqlite2* python-smbc*
+	session-migration* system-config-printer-common*
+	system-config-printer-gnome* system-config-printer-udev*
+	ubuntu-system-service* unity-control-center* unity-greeter*
+	unity-settings-daemon*
+	```
   * Issue:<br />
 	
   * Solution:<br />
@@ -879,7 +886,7 @@
 3. Disable auto startup gitweb when server booting and auto startup when login
 	
   * Run Instruction:<br />
-	copy /etc/init.d/instaweb into /home/git/:<br />
+	copy ```/etc/init.d/instaweb``` into ```/home/git/```:<br />
 	```$ sudo cp /etc/init.d/instaweb /home/git/instaweb.sh```<br />
 	Edit in file just be copied:<br />
 	```sudo -H -u git bash -c "cd /home/git/repositories/gitolite-admin.git && $DAEMON $DAEMON_OPTS"```<br />
@@ -893,7 +900,7 @@
 	```
 	# statup git instaweb
 	if [ -f "path-to-file/instaweb.sh" ]; then
-		path-to-file/instaweb.sh```
+		path-to-file/instaweb.sh
 	fi
 	```	
 	finally, approve the change:<br />
@@ -905,12 +912,12 @@
 	w3m (or lynx) automatic startup
 	
   * Solution:<br />
-  Open and edit /usr/lib/git-core/git-instaweb:<br />
+  Open and edit ```/usr/lib/git-core/git-instaweb```:<br />
 	```sudo nano /usr/lib/git-core/git-instaweb```<br />
 	You comment 5 last lines and save this file.<br />
 	So, if You did not wanna edit that file above, You'd get ```w3m``` (or ```lynx```) out by press ```q``` then press ```y``` on your keyboard.<br />
 	Another, you can remove ```w3m``` (or ```lynx```) too (not recommend):<br />
-		```$ sudo apt-get remove w3m lynx```
+	```$ sudo apt-get remove w3m lynx```
 	
   * Modify:<br />
 
@@ -940,21 +947,21 @@
   * Run Instruction:<br />
 	Create an user account not sudoer named vsftpd: <br />
 	```sudo useradd --shell /bin/bash -u 1002 -b /var/www -m vsftpd```<br />
-	Change the name of $HOME user directory:<br />
+	Change the name of ```$HOME user``` directory:<br />
 	```sudo mv /var/www/vsftpd /var/www/ftp```<br />
 	Set passwd for new account:<br />
 	```sudo passwd vsftpd```<br />
 	Type and retype password which you want. Password is NOT appear.<br />
 	
-	Create a new group named vsftpd:<br />
+	Create a new group named ```vsftpd```:<br />
 	```sudo addgroup --gid 1002 vsftpd```<br />
-	Modify /etc/passwd as root:<br />
+	Modify ```/etc/passwd``` as ```root```:<br />
 	```sudo nano /etc/passwd```<br />	
 	Switch to the line beginning with ```vsftpd``` and changed as follows:<br />
 	```vsftpd:x:1002:1002:vsftpd,,,:/var/www/ftp:/bin/bash```<br />
 	Then save and quit nano.
 	
-	Make symbolic link between one of directories in /var/www/ftp and /svr/ftp:<br />
+	Make symbolic link between some ndirectories in /var/www/ftp into /svr/ftp:<br />
 	```sudo ln -s /var/www/ftp/name_of_directory /svr/ftp```
 	
   * Packages had been changed:<br />
@@ -964,6 +971,7 @@
   * Solution:<br />
 	
   * Modify:<br />
+	```vsftpd``` was changed to ```vftp```. See more ##2016-01-22
 	
   * State:<br />
 	Complete!!! :+1:
@@ -1162,7 +1170,7 @@
 1. Authorized gitweb on lighttpd:
 	
   * Run Instruction:<br />
-	First, you need open /usr/lib/git-core/git-instaweb in a sudoer user:<br />
+	First, you need open ```/usr/lib/git-core/git-instaweb``` in a sudoer user:<br />
 	```$ sudo nano /usr/lib/git-core/git-instaweb```<br />
 	Switch to ```lighttpd_conf ()``` function and edit line ```server.modules = ( "mod_setenv", "mod_cgi" )``` to ```server.modules = ( "mod_setenv", "mod_cgi", "mod_auth" )```<br />
 	In this function, switch to end of function, you'll see:
