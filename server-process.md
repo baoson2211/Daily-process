@@ -1158,3 +1158,51 @@
   * State:<br />
 	Complete!!! :+1:
 
+## 2016-01-22
+1. Authorized gitweb on lighttpd:
+	
+  * Run Instruction:<br />
+	First, you need open /usr/lib/git-core/git-instaweb in a sudoer user:<br />
+	```$ sudo nano /usr/lib/git-core/git-instaweb```<br />
+	Switch to ```lighttpd_conf ()``` function and edit ```server.modules = ( "mod_setenv", "mod_cgi" )``` to ```server.modules = ( "mod_setenv", "mod_cgi", "mod_auth" )```<br />
+	In this function, switch to end function, you'll see:
+	```
+	EOF
+		test x"$local" = xtrue && echo 'server.bind = "127.0.0.1"' >> "$conf"
+	```
+	Add the following lines before session above:<br />
+	```
+	auth.debug = 2
+	auth.backend = "plain"
+	auth.backend.plain.userfile = "path-to-file/.htpasswd"
+	auth.require = ( "/" =>
+		(
+		 "method" => "basic",
+		 "realm" => "Authorized please...",
+		 "require" => "valid-user"
+		)
+	)
+
+	\$HTTP["host"] == "http://ip-address" {
+	auth.require = ( "/" =>
+		(
+		  "method" => "basic",
+		  "realm" => "Authorized please...",
+		  "require" => "valid-user"	
+		)
+	)
+	}
+	```
+	Save file and quit.
+	
+  * Packages had been changed:<br />
+	
+  * Issue:<br />
+		
+  * Solution:<br />
+	
+  * Modify:<br />
+	
+  * State:<br />
+	Complete!!! :+1:
+
