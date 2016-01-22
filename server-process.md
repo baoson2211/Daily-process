@@ -971,7 +971,7 @@
   * Solution:<br />
 	
   * Modify:<br />
-	```vsftpd``` was changed to ```vftp```. See more [2016-01-22](#header-2016-01-22)
+	```vsftpd``` was changed to ```vftp```. See more item 2 on [2016-01-22](#2016-01-22)
 	
   * State:<br />
 	Complete!!! :+1:
@@ -1166,7 +1166,8 @@
   * State:<br />
 	Complete!!! :+1:
 
-## 2016-01-22 {#header-2016-01-22}
+<a name="2016-01-22"/>
+## 2016-01-22
 1. Authorized gitweb on lighttpd:
 	
   * Run Instruction:<br />
