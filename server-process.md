@@ -1197,6 +1197,10 @@
 	
 	Second, ```path-to-file/.htpasswd``` (in ```auth.backend.plain.userfile = "path-to-file/.htpasswd"```) is a hidden file which saves authorized contents. To create this files, you can run next instruction:<br />
 	```sudo nano path-to-file/.htpasswd```<br />
+	This .htpasswd's structure is described as follows:<br />
+	```username:password```<br />
+	
+	NOTE: this guide is simple. I use ```lighttpd plain authorized backend```. You can use other authorized backend supported by developers. For more details, You can find in [this website](https://redmine.lighttpd.net/projects/1/wiki/docs_modauth).
 	
   * Packages had been changed:<br />
 	
