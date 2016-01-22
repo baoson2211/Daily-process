@@ -971,7 +971,7 @@
   * Solution:<br />
 	
   * Modify:<br />
-	```vsftpd``` was changed to ```vftp```. See more item 2 on [2016-01-22](#2016-01-22)
+	```vsftpd``` was changed to ```vftp```. See more item 2 on [2016-01-22](#item2-2016-01-22)
 	
   * State:<br />
 	Complete!!! :+1:
@@ -1221,7 +1221,7 @@
   * State:<br />
 	Complete!!! :+1:
 
-<a name="2016-01-22"/>
+<a name="item2-2016-01-22"/>
 2. Change user information of ```vsftpd```:
 	
   * Run Instruction:<br />
