@@ -1234,12 +1234,12 @@
 
 	Second, run:<br />
 	```$ sudo nano /etc/passwd```<br />
-	change ```vftp:x:1002:1002:vftp,,,:/var/www/ftp:/bin/bash```<br /> 
+	change ```vsftpd:x:1002:1002:vsftpd,,,:/var/www/ftp:/bin/bash```<br /> 
 	to     ```vftp:x:1002:1002:vftp,,,:/var/www/ftp:/bin/bash```<br />
 	Save and quit.
 
 	Third, reset password for user:<br />
-	```sudo passwd vftp```<br />
+	```$ sudo passwd vftp```<br />
 	Type and retype new password which you want. Password is NOT appear.
 
   * Packages had been changed:<br />
