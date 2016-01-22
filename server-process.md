@@ -971,7 +971,7 @@
   * Solution:<br />
 	
   * Modify:<br />
-	```vsftpd``` was changed to ```vftp```. See more item 2 on [2016-01-22](#item2-2016-01-22)
+	```vsftpd``` was changed to ```vftp```. See more [item 2 on 2016-01-22](#item2-2016-01-22)
 	
   * State:<br />
 	Complete!!! :+1:
