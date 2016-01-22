@@ -945,6 +945,7 @@
 2. Create an user account not sudoer
 	
   * Run Instruction:<br />
+	This guide describes how to create an user (non-sudoer). E.g.: ```vsftpd``` is an user which manages ftp service.
 	Create an user account not sudoer named vsftpd: <br />
 	```sudo useradd --shell /bin/bash -u 1002 -b /var/www -m vsftpd```<br />
 	Change the name of ```$HOME user``` directory:<br />
@@ -1222,9 +1223,24 @@
 	Complete!!! :+1:
 
 <a name="item2-2016-01-22"/>
-2. Change user information of ```vsftpd```:
+2. Change log-in information of an user:
 	
   * Run Instruction:<br />
+	Change username and password of an user, e.g. ```vsftpd``` in this guide. Login an sudoer. You can edit 2 files named ```/etc/group``` and ```/etc/passwd```.<br />
+	Fisrt, run:<br />
+	```$ sudo nano /etc/group```<br />
+	change ```vsftpd:x:1002:``` to ```vftp:x:1002:```<br />
+	Save and quit.
+
+	Second, run:<br />
+	```$ sudo nano /etc/passwd```<br />
+	change ```vftp:x:1002:1002:vftp,,,:/var/www/ftp:/bin/bash```<br /> 
+	to     ```vftp:x:1002:1002:vftp,,,:/var/www/ftp:/bin/bash```<br />
+	Save and quit.
+
+	Third, reset password for user:<br />
+	```sudo passwd vftp```<br />
+	Type and retype new password which you want. Password is NOT appear.
 
   * Packages had been changed:<br />
 	
