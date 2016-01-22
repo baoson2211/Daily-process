@@ -961,7 +961,7 @@
 	```vsftpd:x:1002:1002:vsftpd,,,:/var/www/ftp:/bin/bash```<br />
 	Then save and quit nano.
 	
-	Make symbolic link between some ndirectories in /var/www/ftp into /svr/ftp:<br />
+	Make symbolic link between some directories in ```/var/www/ftp``` into ```/svr/ftp``:<br />
 	```sudo ln -s /var/www/ftp/name_of_directory /svr/ftp```
 	
   * Packages had been changed:<br />
@@ -1166,7 +1166,6 @@
   * State:<br />
 	Complete!!! :+1:
 
-<a name="2016-01-22"/>
 ## 2016-01-22
 1. Authorized gitweb on lighttpd:
 	
@@ -1211,6 +1210,22 @@
 	
 	NOTE: this guide is simple. I use ```lighttpd plain authorized backend```. You can use other authorized backend supported by developers. For more details, You can find in [this website](https://redmine.lighttpd.net/projects/1/wiki/docs_modauth).
 	
+  * Packages had been changed:<br />
+	
+  * Issue:<br />
+		
+  * Solution:<br />
+	
+  * Modify:<br />
+	
+  * State:<br />
+	Complete!!! :+1:
+
+<a name="2016-01-22"/>
+2. Change user information of ```vsftpd```:
+	
+  * Run Instruction:<br />
+
   * Packages had been changed:<br />
 	
   * Issue:<br />
