@@ -881,14 +881,18 @@
   * Run Instruction:<br />
 	copy /etc/init.d/instaweb into /home/git/:<br />
 	```$ sudo cp /etc/init.d/instaweb /home/git/instaweb.sh```<br />
+	Edit in file just be copied:<br />
+	```sudo -H -u git bash -c "cd /home/git/repositories/gitolite-admin.git && $DAEMON $DAEMON_OPTS"```<br />
+	to:<br />
+	```sudo -H bash -c "cd /home/git/repositories/gitolite-admin.git && $DAEMON $DAEMON_OPTS"```<br />
 	change file owner and group:<br />
-	```sudo chown git:ase instaweb.sh```<br />
+	```sudo chown root:root instaweb.sh```<br />
 	remove instaweb into /etc/init.d/:<br />
 	```$ sudo update-rc.d instaweb remove```<br />
 	adding the following lines into .profile of each:<br />
 	```
 	# statup git instaweb
-	if [ -f "$HOME/instaweb.sh" ]; then
+	if [ -f "path-to-file/instaweb.sh" ]; then
 		$HOME/instaweb.sh```
 	fi
 	```	
