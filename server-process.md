@@ -1164,8 +1164,8 @@
   * Run Instruction:<br />
 	First, you need open /usr/lib/git-core/git-instaweb in a sudoer user:<br />
 	```$ sudo nano /usr/lib/git-core/git-instaweb```<br />
-	Switch to ```lighttpd_conf ()``` function and edit ```server.modules = ( "mod_setenv", "mod_cgi" )``` to ```server.modules = ( "mod_setenv", "mod_cgi", "mod_auth" )```<br />
-	In this function, switch to end function, you'll see:
+	Switch to ```lighttpd_conf ()``` function and edit line ```server.modules = ( "mod_setenv", "mod_cgi" )``` to ```server.modules = ( "mod_setenv", "mod_cgi", "mod_auth" )```<br />
+	In this function, switch to end of function, you'll see:
 	```
 	EOF
 		test x"$local" = xtrue && echo 'server.bind = "127.0.0.1"' >> "$conf"
@@ -1194,6 +1194,9 @@
 	}
 	```
 	Save file and quit.
+	
+	Second, ```path-to-file/.htpasswd``` (in ```auth.backend.plain.userfile = "path-to-file/.htpasswd"```) is a hidden file which saves authorized contents. To create this files, you can run next instruction:<br />
+	```sudo nano path-to-file/.htpasswd```<br />
 	
   * Packages had been changed:<br />
 	
