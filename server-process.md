@@ -893,7 +893,7 @@
 	```
 	# statup git instaweb
 	if [ -f "path-to-file/instaweb.sh" ]; then
-		$HOME/instaweb.sh```
+		$path-to-file/instaweb.sh```
 	fi
 	```	
 	finally, approve the change:<br />
