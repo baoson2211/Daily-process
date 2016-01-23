@@ -1253,3 +1253,38 @@
   * State:<br />
 	Complete!!! :+1:
 
+## 2016-01-23
+1. Intallation db_util:
+
+  * Run Instruction:<br />
+	```$ sudo apt-get install db-util```<br />
+
+  * Packages had been changed:<br />
+	```db-util db5.3-util```
+	
+  * Issue:<br />
+		
+  * Solution:<br />
+	
+  * Modify:<br />
+	
+  * State:<br />
+	Complete!!! :+1:
+
+2. Intallation db_util:
+
+  * Run Instruction:<br />
+	```$ sudo apt-get install libpam-pwdfile```<br />
+
+  * Packages had been changed:<br />
+	```libpam-pwdfile```
+	
+  * Issue:<br />
+		
+  * Solution:<br />
+	
+  * Modify:<br />
+	
+  * State:<br />
+	Complete!!! :+1:
+
