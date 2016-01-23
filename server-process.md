@@ -1277,8 +1277,8 @@
 	```$ sudo apt-get install libpam-pwdfile```<br />
 
   * Packages had been changed:<br />
-	```libpam-pwdfile```
-	
+	```libpam-pwdfile```<br />
+
   * Issue:<br />
 		
   * Solution:<br />
