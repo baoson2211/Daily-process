@@ -1288,3 +1288,53 @@
   * State:<br />
 	Complete!!! :+1:
 
+## 2016-01-23
+1. Enable CGI with Apache 2:
+
+  * Run Instruction:<br />
+	First, you can edit ```/etc/apache2/apache2.conf```:<br />
+	```$ sudo nano /etc/apache2/apache2.conf```<br />
+	Edit as follow:<br />
+	BEFORE | AFTER
+	-------|-------:
+	<Directory />|<Directory />
+		Options FollowSymLinks|	Options FollowSymLinks
+		AllowOverride None|	AllowOverride None
+		Require all denied|	Require all denied
+	</Directory>|</Directory>
+	|
+	<Directory /usr/share>|<Directory /usr/share>
+		AllowOverride None|	AllowOverride None
+		Require all granted|	Require all granted
+	</Directory>|</Directory>
+	|
+	<Directory /var/www/>|<Directory /var/www/>
+		Options Indexes FollowSymLinks|	Options Indexes FollowSymLinks
+		AllowOverride None|	AllowOverride None
+		Require all granted|	Require all granted
+	</Directory>|</Directory>
+	|
+	#<Directory /srv/>|<Directory /usr/lib/cgi-bin/>
+	#	Options Indexes FollowSymLinks|	Options Indexes FollowSymLinks
+	#	AllowOverride None|	AllowOverride None
+	#	Require all granted|	Require all granted
+	#</Directory>|</Directory>
+	|
+	|#<Directory /srv/>
+	|#	Options Indexes FollowSymLinks
+	|#	AllowOverride None
+	|#	Require all granted
+	|#</Directory>
+	
+
+  * Packages had been changed:<br />
+	
+  * Issue:<br />
+		
+  * Solution:<br />
+	
+  * Modify:<br />
+	
+  * State:<br />
+	Complete!!! :+1:
+
