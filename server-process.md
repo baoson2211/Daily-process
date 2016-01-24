@@ -1295,6 +1295,12 @@
 	First, you can edit ```/etc/apache2/apache2.conf```:<br />
 	```$ sudo nano /etc/apache2/apache2.conf```<br />
 	Edit as follow:<br />
+	|   |   |   |   |   |
+	|---|---|---|---|---|
+	|   |   |   |   |   |
+	|   |   |   |   |   |
+	|   |   |   |   |   |
+
 	|BEFORE | AFTER  |
 	|-------|:------:|
 	|<Directory />|<Directory />|
