@@ -1298,7 +1298,7 @@
 
 	|BEFORE  |AFTER  |
 	|:-------|-------:|
-	|```\<Directory />```<br />		```Options FollowSymLinks```<br />		```AllowOverride None```<br />		```Require all denied```<br />	```\</Directory><br />	\<Directory /usr/share><br />		AllowOverride None<br />		Require all granted<br />	\</Directory><br />		\<Directory /var/www/>```<br />		```Options Indexes FollowSymLinks```<br />		```AllowOverride None```<br />		```Require all granted```<br />	```\</Directory>```<br />	```\<Directory /usr/lib/cgi-bin/>```<br />	```Options Indexes FollowSymLinks```<br />		```AllowOverride None```<br />		```Require all granted```<br />	```\</Directory>```<br />		```\#<Directory /srv/>```<br />	```\#	Options Indexes FollowSymLinks```<br />	```\#	AllowOverride None```<br />	```\#	Require all granted```<br />	```\#</Directory>```
+	|```<Directory />```<br />		```Options FollowSymLinks```<br />		```AllowOverride None```<br />		```Require all denied```<br />	```</Directory><br />	\<Directory /usr/share><br />		AllowOverride None<br />		Require all granted<br />	```</Directory>```<br />		```<Directory /var/www/>```<br />		```Options Indexes FollowSymLinks```<br />		```AllowOverride None```<br />		```Require all granted```<br />	```</Directory>```<br />	```\<Directory /usr/lib/cgi-bin/>```<br />	```Options Indexes FollowSymLinks```<br />		```AllowOverride None```<br />		```Require all granted```<br />	```</Directory>```<br />		```#<Directory /srv/>```<br />	```#	Options Indexes FollowSymLinks```<br />	```#	AllowOverride None```<br />	```#	Require all granted```<br />	```#</Directory>```
 	
 
   * Packages had been changed:<br />
