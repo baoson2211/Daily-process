@@ -1298,8 +1298,7 @@
 
 	|BEFORE  |AFTER  |
 	|-------:|-------:|
-	|
-	```
+	|	```
 	<Directory />
 	Options FollowSymLinks
 	AllowOverride None
@@ -1328,7 +1327,7 @@
 	#	AllowOverride None
 	#	Require all granted
 	#</Directory>
-	```|     |
+	```
 	
 
   * Packages had been changed:<br />
