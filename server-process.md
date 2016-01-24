@@ -1288,18 +1288,43 @@
   * State:<br />
 	Complete!!! :+1:
 
-## 2016-01-23
+## 2016-01-24
 1. Enable CGI with Apache 2:
 
   * Run Instruction:<br />
 	First, you can edit ```/etc/apache2/apache2.conf```:<br />
 	```$ sudo nano /etc/apache2/apache2.conf```<br />
 	Edit as follow:<br />
-
 	|BEFORE  |AFTER  |
 	|:-------|:------|
-	|```<Directory />```<br />		```	Options FollowSymLinks```<br />		```	AllowOverride None```<br />		```	Require all denied```<br />	```</Directory>```<br /><br />	```<Directory /usr/share>```<br />		```	AllowOverride None```<br />		```	Require all granted```<br />	```</Directory>```<br /><br />		```<Directory /var/www/>```<br />		```	Options Indexes FollowSymLinks```<br />		```	AllowOverride None```<br />		```	Require all granted```<br />	```</Directory>```<br /><br />	```#<Directory /srv/>```<br />	```#	Options Indexes FollowSymLinks```<br />	```#	AllowOverride None```<br />	```#	Require all granted```<br />	```#</Directory>``` |```<Directory />```<br />		```	Options FollowSymLinks```<br />		```	AllowOverride None```<br />		```	Require all denied```<br />	```</Directory>```<br /><br />	```<Directory /usr/share>```<br />		```	AllowOverride None```<br />		```	Require all granted```<br />	```</Directory>```<br />		```<Directory /var/www/>```<br /><br />		```	Options Indexes FollowSymLinks```<br />		```	AllowOverride None```<br />		```	Require all granted```<br />	```</Directory>```<br /><br />	```<Directory /usr/lib/cgi-bin/>```<br />	```	Options Indexes FollowSymLinks```<br />		```	AllowOverride None```<br />		```	Require all granted```<br />	```</Directory>```<br /><br />		```#<Directory /srv/>```<br />	```#	Options Indexes FollowSymLinks```<br />	```#	AllowOverride None```<br />	```#	Require all granted```<br />	```#</Directory>``` |
+	|```<Directory />```<br />		```Options FollowSymLinks```<br />		```  AllowOverride None```<br />		```	Require all denied```<br />	```</Directory>```<br /><br />	```<Directory /usr/share>```<br />		```	AllowOverride None```<br />		```	Require all granted```<br />	```</Directory>```<br /><br />		```<Directory /var/www/>```<br />		```	Options Indexes FollowSymLinks```<br />		```	AllowOverride None```<br />		```	Require all granted```<br />	```</Directory>```<br /><br />	```#<Directory /srv/>```<br />	```#	Options Indexes FollowSymLinks```<br />	```#	AllowOverride None```<br />	```#	Require all granted```<br />	```#</Directory>``` |```<Directory />```<br />		```	Options FollowSymLinks```<br />		```	AllowOverride None```<br />		```	Require all denied```<br />	```</Directory>```<br /><br />	```<Directory /usr/share>```<br />		```	AllowOverride None```<br />		```	Require all granted```<br />	```</Directory>```<br /><br />			```<Directory /var/www/>```<br />		```	Options Indexes FollowSymLinks```<br />		```	AllowOverride None```<br />		```	Require all granted```<br />	```</Directory>```<br /><br />	```<Directory /usr/lib/cgi-bin/>```<br />	```	Options Indexes FollowSymLinks```<br />		```	AllowOverride None```<br />		```	Require all granted```<br />	```</Directory>```<br /><br />		```#<Directory /srv/>```<br />	```#	Options Indexes FollowSymLinks```<br />	```#	AllowOverride None```<br />	```#	Require all granted```<br />	```#</Directory>``` |
 	
+	Second, open 000-default.conf with a path as below:<br />
+	```$ sudo nano /etc/apache2/sites-available/000-default.conf```<br />
+	You must insert as the following contents:<br />
+	```
+	ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+	<Directory "/usr/lib/cgi-bin">
+		Options Indexes FollowSymLinks Includes ExecCGI
+		AllowOverride None
+		Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+		Order allow,deny
+		Allow from all
+	</Directory>
+	```
+	in the <Virtualhost *:80> section just above the line (if the above section does not exist):<br />
+	```ErrorLog ${APACHE_LOG_DIR}/error.log```<br />
+
+	Third, you must add cgi module for apache2. Go to /etc/apache2 directory:<br />
+	```$ cd /etc/apache2```<br />
+	and run instructions as below:<br />
+	```$ sudo ln -s ../mods-available/cgid.conf mods-enabled/cgid.conf```<br />
+	```$ sudo ln -s ../mods-available/cgid.load mods-enabled/cgid.load```<br />
+	```$ sudo ln -s ../mods-available/cgi.load mods-enabled/cgi.load```<br />
+	You will create a symbolic link inside /etc/apache2/mods-enabled that points to the module in /etc/apache2/mods-available.
+
+	Finally, please restart ```apache2``` service on your server with:<br />
+	```$ sudo service apache2 restart``` or ```$ sudo /etc/init.d/apache2 restart```
 
   * Packages had been changed:<br />
 	
