@@ -1298,30 +1298,7 @@
 
 	|BEFORE  |AFTER  |
 	|:-------|-------:|
-	|\<Directory />
-		Options FollowSymLinks
-		AllowOverride None
-		Require all denied
-	\</Directory>
-	\<Directory /usr/share>
-		AllowOverride None
-		Require all granted
-	\</Directory>	
-	\<Directory /var/www/>
-		Options Indexes FollowSymLinks
-		AllowOverride None
-		Require all granted
-	\</Directory>	
-	\<Directory /usr/lib/cgi-bin/>
-		Options Indexes FollowSymLinks
-		AllowOverride None
-		Require all granted
-	\</Directory>	
-	\#<Directory /srv/>
-	\#	Options Indexes FollowSymLinks
-	\#	AllowOverride None
-	\#	Require all granted
-	\#</Directory>
+	|\<Directory />		Options FollowSymLinks		AllowOverride None		Require all denied	\</Directory>	\<Directory /usr/share>		AllowOverride None		Require all granted	\</Directory>		\<Directory /var/www/>		Options Indexes FollowSymLinks		AllowOverride None		Require all granted	\</Directory>	\<Directory /usr/lib/cgi-bin/>	Options Indexes FollowSymLinks		AllowOverride None		Require all granted	\</Directory>		\#<Directory /srv/>	\#	Options Indexes FollowSymLinks	\#	AllowOverride None	\#	Require all granted	\#</Directory>
 	
 
   * Packages had been changed:<br />
