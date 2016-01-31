@@ -55,7 +55,7 @@ current cmd.
 
 This toolchain is built and optimized for Cortex-A/R/M bare metal development.
 the following table shows how to invoke GCC/G++ with correct command line
-options for variants of Cortex-A/R and Cortex-M architectures. <br />
+options for variants of Cortex-A/R and Cortex-M architectures.
 ```
 --------------------------------------------------------------------
 | ARM Core | Command Line Options                       | multilib |
