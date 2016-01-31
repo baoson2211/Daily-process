@@ -153,21 +153,21 @@ To distinguish them, we rename the size optimized libraries as:
   ```libg.a --> libg_s.a```
 
 To use newlib-nano, users should provide additional gcc link time option:<br />
- ```--specs=nano.specs```
+ ```--specs=nano.specs```<br />
 
 Nano.specs also handles two additional gcc libraries: ```libstdc++_s.a``` and
-```libsupc++_s.a```, which are optimized for code size.
+```libsupc++_s.a```, which are optimized for code size.<br />
 
 For example:<br />
-```$ arm-none-eabi-gcc src.c --specs=nano.specs $(OTHER_OPTIONS)```
+```$ arm-none-eabi-gcc src.c --specs=nano.specs $(OTHER_OPTIONS)```<br />
 
 This option can also work together with other specs options like
-```--specs=rdimon.specs```
+```--specs=rdimon.specs```<br />
 
 Please be noticed that ```--specs=nano.specs``` is a linker option. Be sure
 to include in linker option if compiling and linking are separated.
 
-##6. additional newlib-nano libraries usage
+##7. additional newlib-nano libraries usage
 
 Newlib-nano is different from newlib in addition to the libraries' name.
 Formatted input/output of floating-point number are implemented as weak symbol.
@@ -185,11 +185,11 @@ source package.
 
 Users can choose to use or not use semihosting by following instructions.
 
-###6.1. semihosting
+###7.1. semihosting
 If you need semihosting, linking like:<br />
 ```$ arm-none-eabi-gcc --specs=rdimon.specs $(OTHER_LINK_OPTIONS)```
 
-###6.2. non-semihosting/retarget
+###7.2. non-semihosting/retarget
 If you are using retarget, linking like:<br />
 ```$ arm-none-eabi-gcc --specs=nosys.specs $(OTHER_LINK_OPTIONS)```
 
