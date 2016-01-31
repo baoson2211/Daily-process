@@ -1,16 +1,16 @@
 # GNU Tools for ARM Embedded Processors Version: 4.8
 
 ## Table of Contents
-1. [Installing executables on Linux](#"Installing executables on Linux")
-2. [Installing executables on Mac OS X](#"Installing executables on Mac OS X")
-3. [Installing executables on Windows](#"Installing executables on Windows")
-4. [Invoking GCC](#"Invoking GCC")
-5. [Architecture options usage](#"Architecture options usage")
-6. [C Libraries usage](#"C Libraries usage")
-7. [GCC Plugin usage](#"GCC Plugin usage")
-8. [Linker scripts & startup code](#"Linker scripts & startup code")
-9. [Samples](#"Samples")
-10. [GDB Server for CMSIS-DAP based hardware debugger](#"GDB Server for CMSIS-DAP based hardware debugger")
+1. [Installing executables on Linux](#Installing executables on Linux)
+2. [Installing executables on Mac OS X](#Installing executables on Mac OS X)
+3. [Installing executables on Windows](#Installing executables on Windows)
+4. [Invoking GCC](#Invoking GCC)
+5. [Architecture options usage](#Architecture options usage)
+6. [C Libraries usage](#C Libraries usage)
+7. [GCC Plugin usage](#GCC Plugin usage)
+8. [Linker scripts & startup code](#Linker scripts & startup code)
+9. [Samples](#Samples)
+10. [GDB Server for CMSIS-DAP based hardware debugger](#GDB Server for CMSIS-DAP based hardware debugger)
 
 <a name="Installing executables on Linux"/>
 ## 1. Installing executables on Linux 
