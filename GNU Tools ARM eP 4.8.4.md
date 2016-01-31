@@ -1,7 +1,7 @@
-#GNU Tools for ARM Embedded Processors
-#Version: 4.8
+# GNU Tools for ARM Embedded Processors
+# Version: 4.8
 
-##Table of Contents
+## Table of Contents
 1. Installing executables on Linux
 2. Installing executables on Mac OS X
 3. Installing executables on Windows 
@@ -13,7 +13,7 @@
 9. Samples
 10. GDB Server for CMSIS-DAP based hardware debugger
 
-##1. Installing executables on Linux 
+## 1. Installing executables on Linux 
 Unpack the tarball to the install directory, like this:<br />
 ```$ cd $install_dir && tar xjf gcc-arm-none-eabi-*-yyyymmdd-linux.tar.bz2```
 
@@ -22,11 +22,11 @@ For 64 bit system, 32 bit libc and libncurses are required to run the tools.
 For some Ubuntu releases, the toolchain can also be installed via
 Launchpad PPA at [https://launchpad.net/~terry.guo/+archive/gcc-arm-embedded](https://launchpad.net/~terry.guo/+archive/gcc-arm-embedded).
 
-##2. Installing executables on Mac OS X
+## 2. Installing executables on Mac OS X
 Unpack the tarball to the install directory, like this:<br />
 ```$ cd $install_dir && tar xjf gcc-arm-none-eabi-*-yyyymmdd-mac.tar.bz2```
 
-##3. Installing executables on Windows
+## 3. Installing executables on Windows
 Run the installer ```(gcc-arm-none-eabi-*-yyyymmdd-win32.exe)``` and follow the
 instructions.
 
@@ -34,7 +34,7 @@ The toolchain in windows ```zip``` package is a backup to windows installer for
 those who cannot run installer.  We need decompress the zip package
 in a proper place and then invoke it following instructions in next section.
 
-##4. Invoking GCC 
+## 4. Invoking GCC 
 On Linux and Mac OS X, either invoke with the complete path like this:<br />
 ```$ $install_dir/gcc-arm-none-eabi-*/bin/arm-none-eabi-gcc```
 
@@ -52,7 +52,7 @@ complete path like this:<br />
 or run ```TOOLCHAIN_UNZIP_DIR\bin\gccvar.bat``` to set environment variables for the
 current cmd.
 
-##5. Architecture options usage
+## 5. Architecture options usage
 
 This toolchain is built and optimized for Cortex-A/R/M bare metal development.
 the following table shows how to invoke GCC/G++ with correct command line
@@ -143,7 +143,7 @@ options for variants of Cortex-A/R and Cortex-M architectures. <br />
 --------------------------------------------------------------------
 ```
 
-##6. C Libraries usage
+## 6. C Libraries usage
 
 This toolchain is released with two prebuilt C libraries based on newlib:
 one is the standard newlib and the other is newlib-nano for code size.
@@ -167,7 +167,7 @@ This option can also work together with other specs options like
 Please be noticed that ```--specs=nano.specs``` is a linker option. Be sure
 to include in linker option if compiling and linking are separated.
 
-###6.1. additional newlib-nano libraries usage
+### 6.1. additional newlib-nano libraries usage
 
 Newlib-nano is different from newlib in addition to the libraries' name.
 Formatted input/output of floating-point number are implemented as weak symbol.
@@ -185,37 +185,37 @@ source package.
 
 Users can choose to use or not use semihosting by following instructions.
 
-###6.2. semihosting
+### 6.2. semihosting
 If you need semihosting, linking like:<br />
 ```$ arm-none-eabi-gcc --specs=rdimon.specs $(OTHER_LINK_OPTIONS)```
 
-###6.3. non-semihosting/retarget
+### 6.3. non-semihosting/retarget
 If you are using retarget, linking like:<br />
 ```$ arm-none-eabi-gcc --specs=nosys.specs $(OTHER_LINK_OPTIONS)```
 
-##7. GCC Plugin usage
+## 7. GCC Plugin usage
 This release includes following Linux GCC plugins for additional performance
 optimization:
 
-###7.1. tree_switch_shortcut: optimize (Finite State Machine) FSM style program
+### 7.1. tree_switch_shortcut: optimize (Finite State Machine) FSM style program
 to reduce condition jump or indirect jumps. Usage:<br />
 ```(GCC option) -fplugin=tree_switch_shortcut_elf```
 
 Please be noticed that current GCC plugin can only run on Linux host. They
 are not available to Windows or Mac OS hosted GCC.
 
-##8. Linker scripts & startup code
+## 8. Linker scripts & startup code
 
 Latest update of linker scripts template and startup code is available on 
 [http://www.arm.com/cmsis](http://www.arm.com/cmsis).
 
-##9. Samples 
+## 9. Samples 
 Examples of all above usages are available at:<br />
-```$install_dir/gcc-arm-none-eabi-*/share/gcc-arm-none-eabi/samples```
+	```$install_dir/gcc-arm-none-eabi-*/share/gcc-arm-none-eabi/samples```
 
 Read ```readme.txt```	 under it for further information.
 
-##10. GDB Server for CMSIS-DAP based hardware debugger
+## 10. GDB Server for CMSIS-DAP based hardware debugger
 CMSIS-DAP is the interface firmware for a Debug Unit that connects
 the Debug Port to USB.  More detailed information can be found at
 [http://www.keil.com/support/man/docs/dapdebug/](http://www.keil.com/support/man/docs/dapdebug/).
