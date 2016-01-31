@@ -170,7 +170,7 @@ This option can also work together with other specs options like
 Please be noticed that ```--specs=nano.specs``` is a linker option. Be sure
 to include in linker option if compiling and linking are separated.
 
-#### 6.1. additional newlib-nano libraries usage
+##### 6.1. additional newlib-nano libraries usage
 
 Newlib-nano is different from newlib in addition to the libraries' name.
 Formatted input/output of floating-point number are implemented as weak symbol.
@@ -188,11 +188,11 @@ source package.
 
 Users can choose to use or not use semihosting by following instructions.
 
-#### 6.2. semihosting
+##### 6.2. semihosting
 If you need semihosting, linking like:<br />
 ```$ arm-none-eabi-gcc --specs=rdimon.specs $(OTHER_LINK_OPTIONS)```
 
-#### 6.3. non-semihosting/retarget
+##### 6.3. non-semihosting/retarget
 If you are using retarget, linking like:<br />
 ```$ arm-none-eabi-gcc --specs=nosys.specs $(OTHER_LINK_OPTIONS)```
 
@@ -201,7 +201,7 @@ If you are using retarget, linking like:<br />
 This release includes following Linux GCC plugins for additional performance
 optimization:
 
-#### 7.1. tree_switch_shortcut: optimize (Finite State Machine) FSM style program
+##### 7.1. tree_switch_shortcut: optimize (Finite State Machine) FSM style program
 to reduce condition jump or indirect jumps. Usage:<br />
 ```(GCC option) -fplugin=tree_switch_shortcut_elf```
 
