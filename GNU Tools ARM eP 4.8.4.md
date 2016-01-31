@@ -201,7 +201,8 @@ If you are using retarget, linking like:<br />
 This release includes following Linux GCC plugins for additional performance
 optimization:
 
-##### 7.1. tree_switch_shortcut: optimize (Finite State Machine) FSM style program
+##### 7.1. tree_switch_shortcut: 
+optimize (Finite State Machine) FSM style program
 to reduce condition jump or indirect jumps. Usage:<br />
 ```(GCC option) -fplugin=tree_switch_shortcut_elf```
 
