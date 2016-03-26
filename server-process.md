@@ -1345,7 +1345,7 @@
 	```$ sudo apt-get update```<br />
   ```$ sudo apt-get -y install build-essential git mysql-server mysql-client libmysqlclient-dev libxml2-dev libxslt1-dev libssl-dev libsqlite3-dev curl rubygems-integration```<br />
   
-	Install rbenv:<br />
+	Install rbenv:
   ```
 	git clone git://github.com/sstephenson/rbenv.git .rbenv
 	echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
@@ -1358,7 +1358,7 @@
   rbenv install 2.2.3
   ```<br />
 	
-	Install ruby:<br />
+	Install ruby:
   ```
   wget http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.4.tar.gz
   tar xvzf ruby-2.1.4.tar.gz
@@ -1369,13 +1369,13 @@
   cd ..
   ```<br />
 
-	Install rails:<br />
+	Install rails:
   ```
   echo "gem: --no-rdoc --no-ri" >> ${HOME}/.gemrc
   sudo gem install rails
   ```<br />
 
-	Install thingspeak:<br />
+	Install thingspeak:
   ```
   git clone https://github.com/iobridge/thingspeak.git
   cp thingspeak/config/database.yml.example thingspeak/config/database.yml
@@ -1384,7 +1384,7 @@
   bundle exec rake db:create 
   bundle exec rake db:schema:load
   rails server
-  ```
+  ```<br />
 
   * Packages had been changed:<br />
 	
