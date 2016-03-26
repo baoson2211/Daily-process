@@ -1356,7 +1356,7 @@
 	exec $SHELL
 	git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
   rbenv install 2.2.3
-  ```<br />
+  ```
 	
 	Install ruby:
   ```
@@ -1367,13 +1367,13 @@
   make
   sudo make install
   cd ..
-  ```<br />
+  ```
 
 	Install rails:
   ```
   echo "gem: --no-rdoc --no-ri" >> ${HOME}/.gemrc
   sudo gem install rails
-  ```<br />
+  ```
 
 	Install thingspeak:
   ```
@@ -1384,7 +1384,7 @@
   bundle exec rake db:create 
   bundle exec rake db:schema:load
   rails server
-  ```<br />
+  ```
 
   * Packages had been changed:<br />
 	
