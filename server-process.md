@@ -1341,11 +1341,11 @@
 ## 2016-03-26
 1. Installing thingspeak on Ubuntu 14.04 Server :
   * Run Instruction:<br />
-  Install prerequisites:
+	Install prerequisites:
 	```$ sudo apt-get update```<br />
   ```$ sudo apt-get -y install build-essential git mysql-server mysql-client libmysqlclient-dev libxml2-dev libxslt1-dev libssl-dev libsqlite3-dev curl rubygems-integration```<br />
   
-  Install rbenv:<br />
+	Install rbenv:<br />
   ```
 	git clone git://github.com/sstephenson/rbenv.git .rbenv
   echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
@@ -1358,7 +1358,7 @@
   rbenv install 2.2.3
   ```
   
-  Install ruby:<br />
+	Install ruby:<br />
   ```
   wget http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.4.tar.gz
   tar xvzf ruby-2.1.4.tar.gz
@@ -1369,13 +1369,13 @@
   cd ..
   ```
 
-  Install rails:<br />
+	Install rails:<br />
   ```
   echo "gem: --no-rdoc --no-ri" >> ${HOME}/.gemrc
   sudo gem install rails
   ```
   
-  Install thingspeak:<br />
+	Install thingspeak:<br />
   ```
   git clone https://github.com/iobridge/thingspeak.git
   cp thingspeak/config/database.yml.example thingspeak/config/database.yml
@@ -1386,7 +1386,7 @@
   rails server
   ```
 
-    * Packages had been changed:<br />
+  * Packages had been changed:<br />
 	
   * Issue:<br />
 		
