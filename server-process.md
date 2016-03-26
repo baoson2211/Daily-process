@@ -1355,35 +1355,35 @@
 	echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
 	exec $SHELL
 	git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
-	rbenv install 2.2.3
+  rbenv install 2.2.3
   ```<br />
-
+	
 	Install ruby:<br />
   ```
-	wget http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.4.tar.gz
-	tar xvzf ruby-2.1.4.tar.gz
-	cd ruby-2.1.4
-	./configure
-	make
-	sudo make install
-	cd ..
+  wget http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.4.tar.gz
+  tar xvzf ruby-2.1.4.tar.gz
+  cd ruby-2.1.4
+  ./configure
+  make
+  sudo make install
+  cd ..
   ```<br />
 
 	Install rails:<br />
   ```
-	echo "gem: --no-rdoc --no-ri" >> ${HOME}/.gemrc
-	sudo gem install rails
-	```<br />
+  echo "gem: --no-rdoc --no-ri" >> ${HOME}/.gemrc
+  sudo gem install rails
+  ```<br />
 
 	Install thingspeak:<br />
   ```
-	git clone https://github.com/iobridge/thingspeak.git
-	cp thingspeak/config/database.yml.example thingspeak/config/database.yml
-	cd thingspeak
-	bundle install
-	bundle exec rake db:create 
-	bundle exec rake db:schema:load
-	rails server
+  git clone https://github.com/iobridge/thingspeak.git
+  cp thingspeak/config/database.yml.example thingspeak/config/database.yml
+  cd thingspeak
+  bundle install
+  bundle exec rake db:create 
+  bundle exec rake db:schema:load
+  rails server
   ```
 
   * Packages had been changed:<br />
