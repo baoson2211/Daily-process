@@ -1338,3 +1338,61 @@
   * State:<br />
 	Complete!!! :+1:
 
+## 2016-03-26
+1. Installing thingspeak on Ubuntu 14.04 Server :
+  * Run Instruction:<br />
+  Install prerequisites:
+	```$ sudo apt-get update```<br />
+  ```$ sudo apt-get -y install build-essential git mysql-server mysql-client libmysqlclient-dev libxml2-dev libxslt1-dev libssl-dev libsqlite3-dev curl rubygems-integration```<br />
+  
+  Install rbenv:<br />
+  ```
+	git clone git://github.com/sstephenson/rbenv.git .rbenv
+  echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+  echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+  exec $SHELL
+  git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+  echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+  exec $SHELL
+  git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
+  rbenv install 2.2.3
+  ```
+  
+  Install ruby:<br />
+  ```
+  wget http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.4.tar.gz
+  tar xvzf ruby-2.1.4.tar.gz
+  cd ruby-2.1.4
+  ./configure
+  make
+  sudo make install
+  cd ..
+  ```
+
+  Install rails:<br />
+  ```
+  echo "gem: --no-rdoc --no-ri" >> ${HOME}/.gemrc
+  sudo gem install rails
+  ```
+  
+  Install thingspeak:<br />
+  ```
+  git clone https://github.com/iobridge/thingspeak.git
+  cp thingspeak/config/database.yml.example thingspeak/config/database.yml
+  cd thingspeak
+  bundle install
+  bundle exec rake db:create 
+  bundle exec rake db:schema:load
+  rails server
+  ```
+
+    * Packages had been changed:<br />
+	
+  * Issue:<br />
+		
+  * Solution:<br />
+	
+  * Modify:<br />
+	
+  * State:<br />
+	Complete!!! :+1:
